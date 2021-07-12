@@ -19,8 +19,9 @@ function encrypt(word) {
    const AlphabetCipher = rotate(rotateNumber);
    for (let letter of word) {
       let letterItem = letters.indexOf(letter);
-      cipherText += (AlphabetCipher[letterItem]) ? AlphabetCipher[letterItem] : letter;
+      cipherText = cipherText + (AlphabetCipher[letterItem]) ? AlphabetCipher[letterItem] : letter;
   }
+  
   return cipherText;
 }
 
