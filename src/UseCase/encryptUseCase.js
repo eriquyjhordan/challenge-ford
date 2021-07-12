@@ -9,7 +9,7 @@ function rotate (index = 0) {
        newAlphabet.sort();
        return newAlphabet.concat(pushed);
    } else {
-       throw new Error('The value of hop must be a number and integer!');
+       throw new Error('The value of index must be a number and integer!');
    }
 }
 
